@@ -19,7 +19,7 @@ let topscore = 13000;
 document.getElementById('highscores').innerHTML = '<tr><th>[NAME]</th><th>[DATE]</th><th>[SCORE]</th></tr>';
 document.getElementById('chart').innerHTML = '';
 
-for (let i=0; i < scores.length; i++) {   
+for (let i=0; i < scores.length; i++) {
   let color = colors[i%colors.length];
 
   let bar = document.createElement('div');
@@ -36,6 +36,15 @@ for (let i=0; i < scores.length; i++) {
   document.getElementById('highscores').appendChild(row);
 }
 
+// submit button
+document.querySelector('#addscore a').addEventListener('click',() => {
+  let entry = {
+    document.getElementById('name').value,
+    document.getElementById('date').value,
+    document.getElementById('score').value,
+
+  }
+}
 // insert entry
 
 let bar = document.createElement('div');
