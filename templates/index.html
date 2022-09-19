@@ -18,7 +18,7 @@
       <h1>HIGH SCORES - PACMAN</h1>
 
       <div id="chart">
-        <div class="bar" style="background-color:#D00; width:95%"></div>
+      <!--  <div class="bar" style="background-color:#D00; width:95%"></div> -->
       </div>
 
       <table id="highscores">
@@ -27,11 +27,12 @@
           <th>[DATE]</th>
           <th>[SCORE]</th>
         </tr>
+        <!--
         <tr style="color:#d00">
           <td>TAB</td>
           <td>1991-03-03</td>
           <td>12345</td>
-        </tr>
+        </tr> -->
       </table>
 
       <h1>ADD SCORE</h1>
@@ -54,9 +55,7 @@
 
 
 
-    <script src="{{ url_for('static', filename='js.js') }}">
-
-    </script>
+    <script src="{{ url_for('static', filename='js.js') }}"></script>
 
   </body>
 
